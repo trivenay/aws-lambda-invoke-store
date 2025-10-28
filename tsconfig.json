@@ -1,9 +1,10 @@
 {
   "extends": "@tsconfig/node18/tsconfig.json",
   "compilerOptions": {
-    "outDir": "dist",
     "rootDir": "src",
-    "declaration": true
+    "declaration": false,
+    "removeComments": true
   },
-  "exclude": ["**/*.spec.ts"]
+  "include": ["src/**/*"],
+  "exclude": ["**/*.spec.ts", "dist"]
 }
