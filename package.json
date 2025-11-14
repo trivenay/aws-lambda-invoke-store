@@ -32,7 +32,7 @@
     "build": "yarn clean && yarn build:types && node ./scripts/build-rollup.js",
     "build:types": "tsc -p tsconfig.types.json",
     "clean": "rm -rf dist-types dist-cjs dist-es",
-    "test": "vitest run",
+    "test": "vitest run --reporter verbose",
     "test:watch": "vitest watch",
     "release": "yarn build && changeset publish"
   },
